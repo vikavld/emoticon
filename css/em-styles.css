@@ -1,0 +1,295 @@
+html {
+    background-image: url("../img/background-main.jpg");
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+.main-page{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+body{
+    height:100vh;
+}
+a.links{
+    color: #d30051;
+    margin: 6px 0px 0px 0px;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 500;
+    padding: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+}
+a.links:hover{
+    border-bottom: 1px solid #d30051;
+}
+@media screen and (max-width: 420px){
+    html.main-page{
+        background-image: url("../img/background-main.jpg");
+        background-size: 220%;
+        background-position: center;
+    }
+}
+/* Generic Classes */
+/* Positioning */
+.positioning-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.positioning-wrapper-vertical-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.positioning-wrapper-horizontal-symmetric{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.horizontal-list-form{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+.horizontal-list-form > ul {
+    display: inherit;
+    width: inherit;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+.horizontal-list-form > ul > li {
+    list-style-type: none;
+}
+.emotion-select-position{
+    margin-top: 25px;
+    position: relative;
+    left: 25%;
+}
+
+/* Shadows */
+.card-shadow {
+    box-shadow: 5px 7px 80px 5px rgba(0, 0, 0, 0.45);
+}
+.small-shadow{/*
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.13);*/
+}
+.btn-shadow{
+    -webkit-box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.15);
+}
+/* Headers*/
+.em-header{
+    height: 75px;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+/* Cards */
+.card-small{
+    background-color: white;
+    box-sizing: border-box;
+    height: 450px;
+    width: 300px;
+    padding: 35px 25px 25px;
+}
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+    .card-small{
+        background-color: white;
+        box-sizing: border-box;
+        height: 550px;
+        width: 400px;
+        padding: 35px 25px 25px;
+    }
+}
+.card-large{
+    background-color: white;
+    box-sizing: border-box;
+    height: 540px;
+    width: 87%;
+    padding: 0px;
+}
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+    .card-large{
+        background-color: white;
+        box-sizing: border-box;
+        height: 550px;
+        width: 400px;
+        padding: 35px 25px 25px;
+    }
+}
+/*Logo and Illustrations*/
+.logo-welcome{
+    height:90px;
+}
+.logo-header{
+    height: 40px;
+}
+.emotion-illustration{
+    height: 165px;
+    display: block;
+}
+/*Wrappers*/
+.wrap-login{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+.wrap-login-checkbox{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+.wrap-btn{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+}
+.user-credentials{
+    width: 200px;
+    height: 100%;
+    justify-content: flex-end;
+}
+.content-wrapper{
+    width: 100%;
+    height: 465px;/*
+    background-color: #888888;*/
+    box-sizing: border-box;
+    padding: 0px 20px 30px 20px;
+}
+.selected-emotion-wrapper{
+    width: 100%;
+}
+.selected-emotion-illustration-detail{
+    width: 30%;
+}
+.selected-emotion-text-wrapper{
+    width:65%;
+}
+/*Labels*/
+.labels{
+    color: #545454;
+    font-size: 9px;
+    font-weight: 500;
+    margin: 0px 0px 7px 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+.labels-checkbox{
+    color: #545454;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+/* Text */
+.main-action-text{
+    color: #2d2d2d;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 25px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+/*Input*/
+.input-small{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #d30051;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    color: #282828;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 11px;
+    outline: none;
+}
+/*Buttons*/
+.btn-main-action-login{
+    border: none;
+    background: #d30051;
+    -webkit-box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.15);
+    color: white;
+    font-weight: 400;
+    font-size: 11px;
+    width: 100%;
+    height: 60px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    outline: none;
+    text-transform: uppercase;
+}
+.btn-main-action{
+    border: none;
+    background: #d30051;
+    color: white;
+    font-weight: 400;
+    font-size: 11px;
+    width: 300px;
+    height: 60px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    outline: none;
+    text-transform: uppercase;
+}
+.btn-main-action-light{
+    border: solid 1px #d30051;
+    background: white;
+    color: #d30051;
+    font-weight: 400;
+    font-size: 11px;
+    width: 300px;
+    height: 60px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    outline: none;
+    text-transform: uppercase;
+}
+.user-image{
+    width: 40px;
+    height: 40px;
+    background-color: #888888;
+    border: solid 3px white;
+    border-radius: 50%;
+    background-image: url("https://randomuser.me/api/portraits/women/18.jpg");
+    background-position: center;
+    background-size: contain;
+    margin: 0px 0px 0px 20px;
+}
+.btn-main-action:hover, .btn-main-action-light:hover{
+    box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.13);
+}
+.user-image:hover{
+    box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.13);
+}
+.selected-emotion-text{
+    color: #545454;
+    width: 400px;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 10px;
+    letter-spacing: 1.3px;
+    border: solid 1px #dcdcdc;
+}
+.selected-emotion-text{
+    outline: none;
+}
+
