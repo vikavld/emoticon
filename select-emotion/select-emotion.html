@@ -12,18 +12,55 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/em-styles.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <!-- Scripts -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script></script>
-    <meta charset="UTF-8">
-    <title>SELECT EMOTION</title>
 </head>
-<body class="positioning-wrapper-flex">
+<body class="positioning-wrapper">
     <div class="card-large card-shadow">
+        <div class="em-header positioning-wrapper-horizontal-symmetric">
+            <object data="../assets/logo-color-simple.svg" type="image/svg+xml" class="logo-header"></object>
+            <div class="user-credentials positioning-wrapper-horizontal-symmetric">
+                <p class="labels">Jane Doe</p>
+                <div class="user-image small-shadow"></div>
+            </div>
+        </div>
+        <p class="main-action-text">How do you feel now?</p>
+        <div class="content-wrapper positioning-wrapper-vertical-center">
+            <form action="" class="horizontal-list-form">
+                <ul class="">
+                    <li>
+                        <object data="../assets/em-extatic.svg" type="image/svg+xml" class="emotion-illustration"></object>
+                        <input type="radio" value="extatic" class="emotion-select-position"><p class="labels-checkbox emotion-select-position">Extatic</p>
+                    </li>
+                    <li>
+                        <object data="../assets/em-happy.svg" type="image/svg+xml" class="emotion-illustration"></object>
+                        <input type="radio" value="happy" class="emotion-select-position" checked><p class="labels-checkbox emotion-select-position">Happy</p>
+                    </li>
+                    <li>
+                        <object data="../assets/em-content.svg" type="image/svg+xml" class="emotion-illustration"></object>
+                        <input type="radio" value="content" class="emotion-select-position"><p class="labels-checkbox emotion-select-position">Content</p>
+                    </li>
+                    <li>
+                        <object data="../assets/em-sad.svg" type="image/svg+xml" class="emotion-illustration"></object>
+                        <input type="radio" value="sad" class="emotion-select-position"><p class="labels-checkbox emotion-select-position">Sad</p>
+                    </li>
+                    <li>
+                        <object data="../assets/em-depressed.svg" type="image/svg+xml" class="emotion-illustration"></object>
+                        <input type="radio" value="depressed" class="emotion-select-position"><p class="labels-checkbox emotion-select-position">depressed</p>
+                    </li>
+                </ul>
+            </form>
+            <div class="wrap-btn positioning-wrapper-horizontal-symmetric">
+                <button class="btn-main-action-light" onclick="location.href='../select-date/select-date.html'">choose another date</button>
+                <button class="btn-main-action" onclick="location.href='../comment-selected-emotion/comment-selected-emotion.html'">continue</button>
+            </div>
 
+
+        </div>
     </div>
 
 </body>

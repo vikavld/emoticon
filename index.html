@@ -12,23 +12,21 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/em-styles.css">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
         <!-- Scripts -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body class="positioning-wrapper-flex">
+    <body class="positioning-wrapper">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="card-small card-shadow">
-            <div class="wrap-logo-login">
-                <object data="assets/logo-color.svg" type="image/svg+xml" class="logo-welcome"></object>
-            </div>
-
+        <div class="card-small card-shadow positioning-wrapper-vertical-center">
+            <object data="assets/logo-color.svg" type="image/svg+xml" class="logo-welcome"></object>
             <div class="wrap-login">
                 <form action="">
                     <p class="labels">email</p>
@@ -38,9 +36,16 @@
                     <p class="labels">password</p>
                     <input type="password" class="input-small">
                 </form>
+                <div class="wrap-login-checkbox positioning-wrapper-horizontal-symmetric">
+                    <form action="">
+                        <input type="checkbox"><p class="labels-checkbox">Remember me</p>
+                    </form>
+                    <a href="http://www.goodui.org/" class="links">Forgot password?</a>
+                </div>
             </div>
+
             <div class="wrap-btn">
-                <button class="btn-main-action" onclick="Log-In-Submit">log in</button>
+                <button class="btn-main-action-login" onclick="location.href='select-emotion/select-emotion.html'">log in</button>
             </div>
         </div>
 

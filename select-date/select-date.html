@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CALENDAR</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/em-styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!-- Scripts -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="positioning-wrapper">
+<div class="card-large card-shadow">
+    <div class="em-header positioning-wrapper-horizontal-symmetric">
+        <object data="../assets/logo-color-simple.svg" type="image/svg+xml" class="logo-header"></object>
+        <div class="user-credentials positioning-wrapper-horizontal-symmetric">
+            <p class="labels">Jane Doe</p>
+            <div class="user-image small-shadow"></div>
+        </div>
+    </div>
+    <p class="main-action-text">Please select the date to update your emotions</p>
+    <p class="sub-action-text">selected date: <span>DD/MM/YY</span></p>
+    <div class="content-wrapper-calendar positioning-wrapper-vertical-center">
+        <!-- Calendar -->
+        <!-- Calendar header / select month-->
+        <div class="calendar-month-wrapper positioning-wrapper-horizontal-symmetric">
+            <div class="labels-calendar">
+                <object data="../assets/chevron-left.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="labels-calendar em-calendar-month-year">
+                <div>march</div>
+                <div>2017</div>
+            </div>
+            <div class="labels-calendar">
+                <object data="../assets/chevron-right.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+        <!-- Calendar body -->
+        <table class="calendar-body">
+            <tr class="labels calendar-header-text">
+                <th>mon</th>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thu</th>
+                <th>fri</th>
+                <th>sat</th>
+                <th>sun</th>
+            </tr>
+            <tr class="labels-calendar">
+                <td class="inactive-date-text">27</td>
+                <td class="inactive-date-text">28</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr class="labels-calendar">
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr class="labels-calendar">
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr class="labels-calendar">
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td style="color: white">23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr class="labels-calendar">
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td class="inactive-date-text">1</td>
+                <td class="inactive-date-text">2</td>
+            </tr>
+        </table>
+        <!-- action buttons -->
+        <div class="wrap-btn positioning-wrapper-horizontal-symmetric">
+            <button class="btn-main-action-light" onclick="location.href='../select-emotion/select-emotion.html'">back</button>
+            <button class="btn-main-action" onclick="location.href='../comment-selected-emotion/comment-selected-emotion.html'">continue</button>
+        </div>
+    </div>
+    <div class="selected-date"></div>
+
+
+
+    </div>
+</div>
+
+</body>
+</html>
